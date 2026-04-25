@@ -1,0 +1,396 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+    color: brown;
+    box-shadow: 2px 5px 5px gray;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+ul li a {
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+
+ul li a:hover {
+    color: brown;
+}
+
+.menu a {
+    color: white;
+}
+
+.menu {
+    font-size: 30px;
+    background-color: brown;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    nav ul {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+/* main-section */
+.top-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0.877)), url("files/IMG_4214.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.about {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 50px;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: flex;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, brown);
+}
+
+.about h1 {
+    font-size: 50px;
+}
+
+.about h2 {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 500;
+    color: brown;
+    text-transform: uppercase;
+}
+
+
+.about p {
+    padding-top: 50px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.viwes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.viwes a {
+    color: black;
+    background-color: brown;
+    padding: 20px 30px;
+    border-radius: 5px;
+    transition: ease 0.5s;
+    font-weight: 600;
+}
+
+.viwes a:hover {
+    color: white;
+    background-color: red;
+    transform: scale(1);
+
+}
+
+@media (max-width: 600px) {
+    .about h1 {
+        font-size: 20px;
+    }
+
+    .about h2 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+    .viwes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+.service {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.904), rgba(0, 0, 0, 0.925)), url("files/my\ picture.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.service-head {
+    text-align: center;
+    padding: 50px;
+    text-transform: uppercase;
+    color: brown;
+    font-size: 25px;
+}
+
+.hor {
+    border-bottom: 2px solid brown;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.service-details {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.service-details img {
+    width: 100%;
+}
+
+.full-details {
+    background-color: gray;
+}
+
+.bnt p {
+    margin-top: 20px;
+}
+
+.service-text {
+    text-align: center;
+}
+
+mark {
+    background-color: brown;
+}
+
+.service-text h1 {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+
+.service-text p {
+    padding-bottom: 20px;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1199px) {
+    .service-details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service-text h1 {
+        font-size: 20px;
+    }
+
+    .service-text p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px) {
+    .service-text h1 {
+        font-size: 20px;
+    }
+
+    .service-text p {
+        font-size: 11px;
+        font-weight: 600;
+    }
+}
+
+.about-me {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(223, 223, 223);
+}
+
+.abouts {
+    text-align: center;
+    color: brown;
+    text-transform: capitalize;
+    padding: 30px;
+    padding-top: 50px;
+    font-size: 30px;
+}
+
+.ab {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+}
+
+.item {
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.item img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.item p {
+    line-height: 25px;
+    text-transform: capitalize;
+}
+
+.item h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1199px) {
+    .ab {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        height: 400px;
+    }
+
+    .item img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+    }
+
+    .item h1 {
+        font-size: 17px;
+    }
+}
+
+.client {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(161, 159, 159);
+}
+
+.client-details {
+    text-align: center;
+    padding: 100px;
+    text-transform: capitalize;
+}
+
+.client-details h1 {
+    margin-bottom: 100px;
+    color: brown;
+    font-size: 40px;
+}
+
+
+.client-details h2 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: brown;
+}
+
+.client-details p {
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.client-details h4 {
+    color: rgb(214, 208, 208);
+    margin-bottom: 100px;
+}
+
+.client-details h5 {
+    font-size: 50px;
+}
+
+.client-details span {
+    font-size: 80px;
+    color: brown;
+}
+
+@media (max-width: 600px) {
+    .client-details h1 {
+        font-size: 25px;
+    }
+
+    .client-details p {
+        line-height: 20px;
+        font-size: 18px;
+    }
+}
