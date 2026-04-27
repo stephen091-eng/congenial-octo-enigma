@@ -21,7 +21,7 @@ a {
     justify-content: center;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    /* padding: 10px 30px; */
     background-color: black;
     color: brown;
     box-shadow: 2px 5px 5px gray;
@@ -583,86 +583,4 @@ mark {
     width: 100%;
     min-height: 80vh;
     background-color: black;
-}
-
-.subscribe-details {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-
-.final {
-    padding-top: 30px;
-}
-
-.non {
-    color: black;
-}
-
-li {
-    list-style: none;
-    padding-top: 20px;
-}
-
-li i {
-    color: gold;
-    font-size: 20px;
-}
-
-li a {
-    color: rgb(124, 123, 123);
-    font-size: 20px;
-}
-
-
-li a:hover {
-    color: gold;
-}
-
-li h1 {
-    font-size: 20px;
-}
-
-.fa-icons a {
-    display: flex;
-    gap: 10px;
-    transition: ease;
-}
-
-.fa-icons a i:hover {
-    color: white;
-    transform: scale(1);
-}
-
-.footer-horizontail-line {
-    border-bottom: 2px solid;
-    margin: 0 auto;
-    width: 90%;
-    color: rgb(172, 165, 165);
-    margin-top: 100px;
-}
-
-.copy-right {
-    color: white;
-    text-transform: capitalize;
-    padding: 20px;
-}
-
-.template a {
-    color: gold;
-}
-
-.template {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-}
-
-.template a {
-    font-size: 25px;
-}
-
-.template a:hover {
-    color: white;
 }
