@@ -140,7 +140,29 @@ ul li a:hover {
 
 .about h1 {
     font-size: 50px;
+    /* animation: slideloop 10s linear infinite; */
+    animation: slidein 5s ease;
 }
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* @keyframes slideloop {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+} */
 
 .about h2 {
     padding-top: 50px;
@@ -148,14 +170,40 @@ ul li a:hover {
     font-weight: 500;
     color: brown;
     text-transform: uppercase;
+    /* animation: fadein 3s ease-in-out infinite alternate; */
 }
+
+/* @keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 8;
+    }
+} */
 
 
 .about p {
     padding-top: 50px;
     font-size: 20px;
     text-transform: uppercase;
+    /* animation: blinktext 2s infinite; */
 }
+
+/* @keyframes blinktext{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+} */
 
 .viwes {
     display: flex;
@@ -173,13 +221,40 @@ ul li a:hover {
     border-radius: 5px;
     transition: all 0.8s ease-in-out;
     font-weight: 600;
+    /* animation: slidein 5s ease infinite alternate; */
 }
+
+/* @keyframes slidein {
+    from{
+        transform: translatey(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+} */
 
 .viwes a:hover {
     color: white;
     background-color: red;
     transform: translateX(-4) scale(1);
 
+}
+
+@media (max-width: 1199px) {
+    .about h1 {
+        font-size: 30px;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .about p {
+        font-size: 19px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -696,7 +771,7 @@ ul li a:hover {
 }
 
 
-.views{
+.views {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -762,6 +837,7 @@ span {
     .view-more p {
         text-align: justify;
     }
+
     .view-more h1 {
         font-size: 30px;
     }
@@ -775,10 +851,10 @@ span {
     }
 
     .view-more a {
-    padding: 5px 50px;
-    text-transform: capitalize;
-    font-size: 20px;
-    border-radius: 10px;
-}
+        padding: 5px 50px;
+        text-transform: capitalize;
+        font-size: 20px;
+        border-radius: 10px;
+    }
 
 }
